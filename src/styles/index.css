@@ -253,8 +253,40 @@ button {
   background-color: #3e8e41;
 }
 
+.screenshot {
+  margin: auto;
+}
+
+.screenshot-pic {
+  width: 80%;
+  margin-bottom: 15px;
+}
+
+.tech-stack {
+  margin: auto;
+}
+
+.project-description {
+  margin: auto;
+  width: 80%;
+}
+
+.tech-padding {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
 
 @media (min-width: 700px) {
+  .screenshot-pic {
+    width: 75%;
+  }
+
+  .tech-padding {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
   .nav-text {
     font-size: 20px;
   }
@@ -303,56 +335,4 @@ button {
     padding-bottom: 20px;
     width: 75%;
   }
-
-  .screenshot-pic {
-    width: 75%;
-    margin-bottom: 15px;
-  }
-
-  .tech-stack {
-    margin: auto;
-  }
-
-  .project-description {
-    margin: auto;
-    width: 80%;
-  }
-
-  .tech-padding {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-
-  @-webkit-keyframes slideInLeft {
-    from {
-      -webkit-transform: translate3d(-100%, 0, 0);
-      transform: translate3d(-100%, 0, 0);
-      visibility: visible;
-    }
-  
-    to {
-      -webkit-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0);
-    }
-  }
-  
-  @keyframes slideInLeft {
-    from {
-      -webkit-transform: translate3d(-100%, 0, 0);
-      transform: translate3d(-100%, 0, 0);
-      visibility: visible;
-    }
-  
-    to {
-      -webkit-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0);
-    }
-  }
-  
-  .slideInLeft {
-    -webkit-animation-name: slideInLeft;
-    animation-name: slideInLeft;
-  }
-
 }
