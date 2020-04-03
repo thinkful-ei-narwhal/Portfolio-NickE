@@ -10,16 +10,16 @@ h2 {
   font-size: 32px;
 }
 
-#aboutme {
-  color: #FF9B80;
+.aboutme-color {
+  color: #FF9B80 !important;
 }
 
-#portfolio {
-  color: #19D78B;
+.portfolio-color {
+  color: #19D78B !important;
 }
 
-#contact {
-  color: #DC78DE;
+.contact-color {
+  color: #DC78DE !important;
 }
 
 .headline {
