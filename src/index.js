@@ -6,4 +6,18 @@ function burgerListener() {
   });
 }
 
-$(burgerListener);
+
+//anchor listener testing
+const anchorListener = function () {
+  $('.js-nav').on('click', 'a.menu-button', function (event) {
+    event.preventDefault();
+    $('html, body').animate({ scrollTop: ($($(this).attr('href')).offset().top - 150) }, 800);
+  });
+};
+
+function handleListeners() {
+  burgerListener();
+  anchorListener();
+}
+
+$(handleListeners);
